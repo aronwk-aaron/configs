@@ -7,9 +7,9 @@ alias -g la='ls -la --color'
 alias -g ll="ls -lh --color"
 alias -g ..='cd ..'
 
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
+alias -g ...='cd ../..'
+alias -g ....='cd ../../..'
+alias -g .....='cd ../../../..'
 alias -g CA="2>&1 | cat -A"
 alias -g C='| wc -l'
 alias -g D="DISPLAY=:0.0"
