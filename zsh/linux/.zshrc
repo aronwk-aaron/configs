@@ -73,14 +73,19 @@ path=(~/.local/bin $path[@])
 # Auto Suggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Command not found hook, will automatically search official repos for packages when a command is not found
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
 # Syntax highliting
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # Exports
+export TERM="xterm-256color"
 export BROWSER="chromium"
 export EDITOR='/usr/bin/code'
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.yarn-config/global/node_modules/.bin"
 
 # Dir colors
 LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
